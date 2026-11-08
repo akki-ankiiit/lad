@@ -9,9 +9,9 @@ export default function SeaViews() {
             <div className="grid">
               <div className="cta-s_desc">
                 <p data-scroll-reveal="p" className="l1 a-center">
-                  Every meaningful space begins with a conversation. Tell us
-                  about the home you imagine, the way you live, and what matters
-                  most to you.
+                  Every extraordinary space begins with a conversation. Tell us
+                  about your residence, hotel, restaurant or office — and the
+                  vision you would like to realise.
                 </p>
               </div>
             </div>
@@ -19,13 +19,13 @@ export default function SeaViews() {
             <div className="grid">
               <div className="cta-s_title">
                 <h2 data-scroll-reveal="h" className="h1 a-center">
-                  A home
+                  Start your
                   <br />
-                  with soul
+                  design journey
                 </h2>
                 <div className="u-32" />
                 <h3 data-scroll-reveal="h" className="c1 a-center">
-                  Thoughtfully yours
+                  Beyond design
                 </h3>
                 <div className="u-160" />
                 <div data-scroll-reveal="ctn" className="cta-s_title_btn">
@@ -109,8 +109,8 @@ export default function SeaViews() {
               <img
                 data-parallax="img"
                 loading="eager"
-                alt="Light-filled creative studio with natural materials"
-                src="/assets/interiors/studio.webp"
+                alt="Classic dining room decoration by Luxury Antonovich Design"
+                src="/assets/antonovich/living-rooms/classic-dining-room-decoration-01.webp"
                 className="img-p"
               />
               <div className="img-over-grad from-top _4x" />

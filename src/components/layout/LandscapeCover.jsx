@@ -5,7 +5,7 @@ export default function LandscapeCover() {
       <div className="landscape-cover_img">
         <img
           loading="eager"
-          src="/assets/images/6a068da7ad91b057365bf974_landscape.svg"
+          src="/assets/images/landscape.svg"
           alt=""
           className="img contain"
         />

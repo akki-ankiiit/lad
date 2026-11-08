@@ -1,3 +1,5 @@
+import { projectTypes, serviceOptions, socials } from "../../data/studio";
+import BrandMark from "./BrandMark";
 import BrandSeal from "./BrandSeal";
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function CallModal() {
@@ -45,15 +47,15 @@ export default function CallModal() {
                 <form
                   id="wf-form-Book-a-call"
                   name="wf-form-Book-a-call"
-                  data-name="Let\u2019s talk"
+                  data-name="Inquire now"
                   method="post"
                   className="form_block"
                 >
                   <div className="modal_cta_l">
                     <div className="modal_cta_l_t">
                       <div className="modal_cta_a">
-                        <h1 className="a2 b-desk">Let’s talk</h1>
-                        <div className="a1 b-mob">Let’s talk</div>
+                        <h1 className="a2 b-desk">Inquire now</h1>
+                        <div className="a1 b-mob">Inquire now</div>
                       </div>
                       <div className="u-24" />
                     </div>
@@ -61,56 +63,18 @@ export default function CallModal() {
                       <div className="modal_cta_desc">
                         <div
                           data-modal-close="menu"
-                          aria-label="logo envy maison"
+                          aria-label="Luxury Antonovich Design"
                           className="logo_symbol ico-48 b-mob"
                         >
                           <div className="logo w-embed">
-                            <svg
-                              width="100%"
-                              height="100%"
-                              viewBox="0 0 40 40"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M6.55544 9.1241C4.81712 7.38578 4.69025 4.69428 4.69025 4.69428C4.69025 4.69428 7.38176 4.82115 9.12007 6.55947C10.8584 8.29779 10.9853 10.9893 10.9853 10.9893C10.9853 10.9893 8.29376 10.8624 6.55544 9.1241Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M20 0.00151769L16.1569 8.1194C15.5932 9.31006 15.5931 10.6907 16.1568 11.8814L18.4988 16.8291C17.7735 17.1796 17.1891 17.7755 16.8534 18.5091L11.8814 16.1558C10.6907 15.5923 9.31007 15.5923 8.11946 16.156L0 20V19.177C0 18.3493 0.423339 17.5792 1.12211 17.1356L7.64451 12.9953C9.08249 12.0825 10.9183 12.0824 12.3564 12.9951L14.1067 14.1059L12.9961 12.3565C12.0833 10.9184 12.0833 9.08239 12.9962 7.64431L17.1364 1.12212C17.5799 0.423353 18.3501 1.51793e-05 19.1777 1.51793e-05L20 0.00151769Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M33.4446 30.8759C35.1829 32.6142 35.3097 35.3057 35.3097 35.3057C35.3097 35.3057 32.6182 35.1788 30.8799 33.4405C29.1416 31.7022 29.0147 29.0107 29.0147 29.0107C29.0147 29.0107 31.7062 29.1375 33.4446 30.8759Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M20 39.9984L23.8431 31.8806C24.4068 30.6899 24.4069 29.3092 23.8432 28.1185L21.5012 23.1708C22.2265 22.8204 22.8109 22.2244 23.1466 21.4909L28.1186 23.8441C29.3093 24.4077 30.6899 24.4076 31.8805 23.8439L40 19.9999V20.8229C40 21.6506 39.5767 22.4208 38.8779 22.8643L32.3555 27.0047C30.9175 27.9175 29.0817 27.9176 27.6436 27.0049L25.8933 25.894L27.0039 27.6435C27.9167 29.0816 27.9167 30.9176 27.0038 32.3556L22.8636 38.8778C22.4201 39.5766 21.6499 39.9999 20.8223 39.9999L20 39.9984Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M30.8759 6.55544C32.6142 4.81712 35.3057 4.69026 35.3057 4.69026C35.3057 4.69026 35.1789 7.38176 33.4405 9.12008C31.7022 10.8584 29.0107 10.9853 29.0107 10.9853C29.0107 10.9853 29.1376 8.29376 30.8759 6.55544Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M39.9985 20L31.8806 16.1569C30.69 15.5932 29.3093 15.5931 28.1186 16.1568L23.1709 18.4988C22.8204 17.7735 22.2245 17.1891 21.4909 16.8534L23.8442 11.8814C24.4078 10.6907 24.4077 9.31007 23.844 8.11946L20 0L20.823 3.59746e-08C21.6507 7.2153e-08 22.4208 0.423339 22.8644 1.12211L27.0047 7.64451C27.9175 9.08249 27.9176 10.9183 27.0049 12.3564L25.8941 14.1067L27.6435 12.9961C29.0816 12.0833 30.9176 12.0833 32.3557 12.9962L38.8779 17.1364C39.5767 17.5799 40 18.3501 40 19.1777L39.9985 20Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M9.12417 33.4445C7.38585 35.1828 4.69435 35.3097 4.69435 35.3097C4.69435 35.3097 4.82122 32.6182 6.55954 30.8799C8.29786 29.1416 10.9894 29.0147 10.9894 29.0147C10.9894 29.0147 10.8625 31.7062 9.12417 33.4445Z"
-                                fill="currentColor"
-                              />
-                              <path
-                                d="M0.00159168 20L8.11947 23.8431C9.31013 24.4068 10.6908 24.4068 11.8815 23.8432L16.8292 21.5012C17.1796 22.2265 17.7756 22.8109 18.5092 23.1466L16.1559 28.1186C15.5923 29.3093 15.5924 30.6899 16.1561 31.8805L20.0001 40H19.1771C18.3494 40 17.5793 39.5766 17.1357 38.8779L12.9954 32.3555C12.0825 30.9175 12.0825 29.0816 12.9951 27.6436L14.106 25.8933L12.3566 27.0038C10.9185 27.9167 9.08247 27.9167 7.64438 27.0038L1.1222 22.8636C0.423427 22.42 8.89523e-05 21.6499 8.90608e-05 20.8222L0.00159168 20Z"
-                                fill="currentColor"
-                              />
-                            </svg>
+                            <BrandMark />
                           </div>
                         </div>
                         <div className="u-32 b-mob" />
                         <p className="l1 mob_a-center">
-                          Tell us a little about your space. We would love to
-                          hear what you have in mind.
+                          Start your design journey. Tell us about your project
+                          — residential, commercial or hospitality — and our
+                          team will be in touch.
                         </p>
                       </div>
                     </div>
@@ -122,50 +86,11 @@ export default function CallModal() {
                     <div className="modal_cta_c_logo">
                       <div
                         data-modal-close="menu"
-                        aria-label="logo envy maison"
+                        aria-label="Luxury Antonovich Design"
                         className="logo_symbol header"
                       >
                         <div className="logo w-embed">
-                          <svg
-                            width="100%"
-                            height="100%"
-                            viewBox="0 0 40 40"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M6.55544 9.1241C4.81712 7.38578 4.69025 4.69428 4.69025 4.69428C4.69025 4.69428 7.38176 4.82115 9.12007 6.55947C10.8584 8.29779 10.9853 10.9893 10.9853 10.9893C10.9853 10.9893 8.29376 10.8624 6.55544 9.1241Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M20 0.00151769L16.1569 8.1194C15.5932 9.31006 15.5931 10.6907 16.1568 11.8814L18.4988 16.8291C17.7735 17.1796 17.1891 17.7755 16.8534 18.5091L11.8814 16.1558C10.6907 15.5923 9.31007 15.5923 8.11946 16.156L0 20V19.177C0 18.3493 0.423339 17.5792 1.12211 17.1356L7.64451 12.9953C9.08249 12.0825 10.9183 12.0824 12.3564 12.9951L14.1067 14.1059L12.9961 12.3565C12.0833 10.9184 12.0833 9.08239 12.9962 7.64431L17.1364 1.12212C17.5799 0.423353 18.3501 1.51793e-05 19.1777 1.51793e-05L20 0.00151769Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M33.4446 30.8759C35.1829 32.6142 35.3097 35.3057 35.3097 35.3057C35.3097 35.3057 32.6182 35.1788 30.8799 33.4405C29.1416 31.7022 29.0147 29.0107 29.0147 29.0107C29.0147 29.0107 31.7062 29.1375 33.4446 30.8759Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M20 39.9984L23.8431 31.8806C24.4068 30.6899 24.4069 29.3092 23.8432 28.1185L21.5012 23.1708C22.2265 22.8204 22.8109 22.2244 23.1466 21.4909L28.1186 23.8441C29.3093 24.4077 30.6899 24.4076 31.8805 23.8439L40 19.9999V20.8229C40 21.6506 39.5767 22.4208 38.8779 22.8643L32.3555 27.0047C30.9175 27.9175 29.0817 27.9176 27.6436 27.0049L25.8933 25.894L27.0039 27.6435C27.9167 29.0816 27.9167 30.9176 27.0038 32.3556L22.8636 38.8778C22.4201 39.5766 21.6499 39.9999 20.8223 39.9999L20 39.9984Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M30.8759 6.55544C32.6142 4.81712 35.3057 4.69026 35.3057 4.69026C35.3057 4.69026 35.1789 7.38176 33.4405 9.12008C31.7022 10.8584 29.0107 10.9853 29.0107 10.9853C29.0107 10.9853 29.1376 8.29376 30.8759 6.55544Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M39.9985 20L31.8806 16.1569C30.69 15.5932 29.3093 15.5931 28.1186 16.1568L23.1709 18.4988C22.8204 17.7735 22.2245 17.1891 21.4909 16.8534L23.8442 11.8814C24.4078 10.6907 24.4077 9.31007 23.844 8.11946L20 0L20.823 3.59746e-08C21.6507 7.2153e-08 22.4208 0.423339 22.8644 1.12211L27.0047 7.64451C27.9175 9.08249 27.9176 10.9183 27.0049 12.3564L25.8941 14.1067L27.6435 12.9961C29.0816 12.0833 30.9176 12.0833 32.3557 12.9962L38.8779 17.1364C39.5767 17.5799 40 18.3501 40 19.1777L39.9985 20Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M9.12417 33.4445C7.38585 35.1828 4.69435 35.3097 4.69435 35.3097C4.69435 35.3097 4.82122 32.6182 6.55954 30.8799C8.29786 29.1416 10.9894 29.0147 10.9894 29.0147C10.9894 29.0147 10.8625 31.7062 9.12417 33.4445Z"
-                              fill="currentColor"
-                            />
-                            <path
-                              d="M0.00159168 20L8.11947 23.8431C9.31013 24.4068 10.6908 24.4068 11.8815 23.8432L16.8292 21.5012C17.1796 22.2265 17.7756 22.8109 18.5092 23.1466L16.1559 28.1186C15.5923 29.3093 15.5924 30.6899 16.1561 31.8805L20.0001 40H19.1771C18.3494 40 17.5793 39.5766 17.1357 38.8779L12.9954 32.3555C12.0825 30.9175 12.0825 29.0816 12.9951 27.6436L14.106 25.8933L12.3566 27.0038C10.9185 27.9167 9.08247 27.9167 7.64438 27.0038L1.1222 22.8636C0.423427 22.42 8.89523e-05 21.6499 8.90608e-05 20.8222L0.00159168 20Z"
-                              fill="currentColor"
-                            />
-                          </svg>
+                          <BrandMark />
                         </div>
                       </div>
                       <div className="header-logo_bg b-mob w-embed">
@@ -198,7 +123,7 @@ export default function CallModal() {
                         <div className="input">
                           <div className="input_label">
                             <label htmlFor="name" className="l1 reg">
-                              Your name:
+                              Full name:
                             </label>
                           </div>
                           <input
@@ -234,12 +159,12 @@ export default function CallModal() {
                         <div className="input">
                           <div className="input_label">
                             <label htmlFor="phone" className="l1 reg">
-                              Phone (+91):
+                              Phone:
                             </label>
                           </div>
                           <input
                             className="input_field l1 w-input"
-                            autoComplete="phone"
+                            autoComplete="tel"
                             maxLength={256}
                             name="phone"
                             data-name="phone"
@@ -251,8 +176,106 @@ export default function CallModal() {
                         </div>
                         <div className="input">
                           <div className="input_label">
+                            <label htmlFor="country" className="l1 reg">
+                              Country:
+                            </label>
+                          </div>
+                          <input
+                            className="input_field l1 w-input"
+                            autoComplete="country-name"
+                            maxLength={256}
+                            name="country"
+                            data-name="country"
+                            placeholder=""
+                            type="text"
+                            id="country"
+                          />
+                        </div>
+                        <div className="input">
+                          <div className="input_label">
+                            <label htmlFor="project_type" className="l1 reg">
+                              Project type:
+                            </label>
+                          </div>
+                          <select
+                            className="input_field l1 w-input studio-select"
+                            name="project_type"
+                            data-name="project_type"
+                            id="project_type"
+                            defaultValue={""}
+                          >
+                            <option value="" disabled>
+                              Select…
+                            </option>
+                            {projectTypes.map((option) => (
+                              <option key={option} value={option}>
+                                {option}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="input">
+                          <div className="input_label">
+                            <label
+                              htmlFor="project_location"
+                              className="l1 reg"
+                            >
+                              Project location:
+                            </label>
+                          </div>
+                          <input
+                            className="input_field l1 w-input"
+                            autoComplete="off"
+                            maxLength={256}
+                            name="project_location"
+                            data-name="project_location"
+                            placeholder=""
+                            type="text"
+                            id="project_location"
+                          />
+                        </div>
+                        <div className="input">
+                          <div className="input_label">
+                            <label htmlFor="project_area" className="l1 reg">
+                              Approximate project area:
+                            </label>
+                          </div>
+                          <input
+                            className="input_field l1 w-input"
+                            autoComplete="off"
+                            maxLength={256}
+                            name="project_area"
+                            data-name="project_area"
+                            placeholder=""
+                            type="text"
+                            id="project_area"
+                          />
+                        </div>
+                        <div className="input">
+                          <div className="input_label">
+                            <label htmlFor="services" className="l1 reg">
+                              Services required:
+                            </label>
+                          </div>
+                          <select
+                            className="input_field l1 w-input studio-select"
+                            name="services"
+                            data-name="services"
+                            id="services"
+                            defaultValue={[]}
+                            multiple
+                          >
+                            {serviceOptions.map((option) => (
+                              <option key={option} value={option}>
+                                {option}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="input">
+                          <div className="input_label">
                             <label htmlFor="message" className="l1 reg">
-                              Your project:
+                              Project description:
                             </label>
                           </div>
                           <textarea
@@ -406,42 +429,9 @@ export default function CallModal() {
                             className="social-cms_list_item w-dyn-item"
                           >
                             <a
-                              aria-label="Linkedin"
-                              hover-social=""
-                              href="/contact"
-                              target="_blank"
-                              className="social-btn w-inline-block"
-                              rel="noopener noreferrer"
-                            >
-                              <div hover="ico" className="ico-16">
-                                <div className="ico w-embed">
-                                  <svg
-                                    width="100%"
-                                    height="100%"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M6.94048 5.00091C6.94011 5.81522 6.44608 6.548 5.69134 6.85371C4.9366 7.15943 4.07187 6.97703 3.5049 6.39253C2.93793 5.80802 2.78195 4.93813 3.1105 4.19305C3.43906 3.44797 4.18654 2.97648 5.00048 3.00091C6.08155 3.03336 6.94097 3.91935 6.94048 5.00091ZM7.00048 8.48091H3.00048V21.0009H7.00048V8.48091ZM13.3205 8.48091H9.34048V21.0009H13.2805V14.4309C13.2805 10.7709 18.0505 10.4309 18.0505 14.4309V21.0009H22.0005V13.0709C22.0005 6.90091 14.9405 7.13091 13.2805 10.1609L13.3205 8.48091Z"
-                                      fill="currentColor"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                              <div data-comma="" className="social-btn_line">
-                                <div className="line-h" />
-                              </div>
-                            </a>
-                          </div>
-                          <div
-                            role="listitem"
-                            className="social-cms_list_item w-dyn-item"
-                          >
-                            <a
                               aria-label="Facebook"
                               hover-social=""
-                              href="/contact"
+                              href={socials[1].href}
                               target="_blank"
                               className="social-btn w-inline-block"
                               rel="noopener noreferrer"
@@ -474,7 +464,7 @@ export default function CallModal() {
                             <a
                               aria-label="Instagram"
                               hover-social=""
-                              href="/contact"
+                              href={socials[0].href}
                               target="_blank"
                               className="social-btn w-inline-block"
                               rel="noopener noreferrer"
@@ -506,9 +496,9 @@ export default function CallModal() {
                     <div className="form_success_desc">
                       <div className="u-48 b-mob" />
                       <p className="p1 a-center">
-                        Our studio will review your brief and get back to you
-                        personally. We look forward to learning more about your
-                        space.
+                        Our team will review your project details and get back
+                        to you personally. We look forward to creating something
+                        extraordinary together.
                       </p>
                     </div>
                   </div>

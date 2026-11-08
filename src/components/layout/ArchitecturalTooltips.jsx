@@ -10,13 +10,13 @@ export default function ArchitecturalTooltips() {
         >
           <div className="floating-tip-card">
             <div className="floating-tip-card_t">
-              <h1 className="h5">Made to last</h1>
+              <h1 className="h5">Marble & stone</h1>
             </div>
             <div className="floating-tip-card_b">
               <p className="p1">
-                Natural finishes and honest materials, selected for their
-                character and longevity. Beautiful today, and richer with the
-                passing of time.
+                Natural marble floors, stucco and decorative plaster — material
+                excellence that defines the character of every Luxury Antonovich
+                Design interior.
               </p>
             </div>
             <div className="card_decor">
@@ -168,12 +168,12 @@ export default function ArchitecturalTooltips() {
         >
           <div className="floating-tip-card">
             <div className="floating-tip-card_t">
-              <h1 className="h5">Light & flow</h1>
+              <h1 className="h5">Thoughtful lighting</h1>
             </div>
             <div className="floating-tip-card_b">
               <p className="p1">
-                We let daylight lead the way, using thoughtful planning and
-                layered lighting to give each room its own rhythm.
+                Chandeliers, lamps and artistic stained glass of own design
+                define the boundaries of space and the mood of every room.
               </p>
             </div>
             <div className="card_decor">
@@ -325,13 +325,12 @@ export default function ArchitecturalTooltips() {
         >
           <div className="floating-tip-card">
             <div className="floating-tip-card_t">
-              <h1 className="h5">Your everyday sanctuary</h1>
+              <h1 className="h5">Bespoke craftsmanship</h1>
             </div>
             <div className="floating-tip-card_b">
               <p className="p1">
-                Spaces that balance togetherness with quiet corners. Designed
-                for family, friendship and the small rituals that make a house
-                your own.
+                Designer furniture, joinery, curtains and decor made to order —
+                composed to complement the architecture of each project.
               </p>
             </div>
             <div className="card_decor">

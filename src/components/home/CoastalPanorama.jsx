@@ -12,7 +12,7 @@ export default function CoastalPanorama() {
                 <div data-marquee-css="list" className="marquee_list">
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c60405a99c8530535e_img_clouds_33.avif"
+                      src="/assets/images/clouds-33.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-33"
@@ -20,7 +20,7 @@ export default function CoastalPanorama() {
                   </div>
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c60405a99c8530535e_img_clouds_33.avif"
+                      src="/assets/images/clouds-33.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-33"
@@ -30,7 +30,7 @@ export default function CoastalPanorama() {
                 <div data-marquee-css="list" className="marquee_list">
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c60405a99c8530535e_img_clouds_33.avif"
+                      src="/assets/images/clouds-33.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-33"
@@ -38,7 +38,7 @@ export default function CoastalPanorama() {
                   </div>
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c60405a99c8530535e_img_clouds_33.avif"
+                      src="/assets/images/clouds-33.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-33"
@@ -54,7 +54,7 @@ export default function CoastalPanorama() {
                 <div data-marquee-css="list" className="marquee_list">
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6685d7bb04792137a_img_clouds_47.avif"
+                      src="/assets/images/clouds-47.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-47"
@@ -62,7 +62,7 @@ export default function CoastalPanorama() {
                   </div>
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6685d7bb04792137a_img_clouds_47.avif"
+                      src="/assets/images/clouds-47.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-47"
@@ -72,7 +72,7 @@ export default function CoastalPanorama() {
                 <div data-marquee-css="list" className="marquee_list">
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6685d7bb04792137a_img_clouds_47.avif"
+                      src="/assets/images/clouds-47.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-47"
@@ -80,7 +80,7 @@ export default function CoastalPanorama() {
                   </div>
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6685d7bb04792137a_img_clouds_47.avif"
+                      src="/assets/images/clouds-47.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-47"
@@ -96,7 +96,7 @@ export default function CoastalPanorama() {
                 <div data-marquee-css="list" className="marquee_list">
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6c9c3c584d9d78d85_img_clouds_02.avif"
+                      src="/assets/images/clouds-02.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-02"
@@ -104,7 +104,7 @@ export default function CoastalPanorama() {
                   </div>
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6c9c3c584d9d78d85_img_clouds_02.avif"
+                      src="/assets/images/clouds-02.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-02"
@@ -114,7 +114,7 @@ export default function CoastalPanorama() {
                 <div data-marquee-css="list" className="marquee_list">
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6c9c3c584d9d78d85_img_clouds_02.avif"
+                      src="/assets/images/clouds-02.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-02"
@@ -122,7 +122,7 @@ export default function CoastalPanorama() {
                   </div>
                   <div className="marquee_list_item">
                     <img
-                      src="/assets/images/6a0fa3c6c9c3c584d9d78d85_img_clouds_02.avif"
+                      src="/assets/images/clouds-02.avif"
                       loading="eager"
                       alt=""
                       className="clouds is-02"
@@ -140,15 +140,15 @@ export default function CoastalPanorama() {
                     <div data-scroll-reveal="line" className="line-v" />
                   </div>
                   <h3 data-scroll-reveal="p" className="l1">
-                    Considered spaces, across India
+                    Dubai · Miami · Riyadh
                   </h3>
                   <div className="u-32" />
                   <h4 data-scroll-reveal="p" className="p1">
-                    Indian craft. Contemporary living.
+                    Projects across the Middle East, USA, Europe and Africa
                   </h4>
                   <div className="u-32" />
                   <h5 data-scroll-reveal="p" className="p1">
-                    India
+                    Global
                   </h5>
                 </div>
                 <div className="b-mob">
@@ -202,9 +202,9 @@ export default function CoastalPanorama() {
               </div>
               <div className="img-w h-auto">
                 <img
-                  src="/assets/interiors/dining.webp"
+                  src="/assets/antonovich/living-rooms/extra-elegant-dinning-room-01.webp"
                   loading="eager"
-                  alt="Considered dining and living space in warm neutral tones"
+                  alt="Extra elegant dining room with chandelier and inlaid marble floor by Luxury Antonovich Design"
                   className="img h-auto"
                 />
                 <div className="img-over-grad from-bot bot _100vh" />

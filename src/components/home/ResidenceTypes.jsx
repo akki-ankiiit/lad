@@ -1,7 +1,12 @@
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function ResidenceTypes() {
   return (
-    <section data-bg="light" data-snap="" className="section theme_on-brand">
+    <section
+      id="works"
+      data-bg="light"
+      data-snap=""
+      className="section theme_on-brand"
+    >
       <div className="container">
         <div className="apart-type-w">
           <div className="apart-type-s">
@@ -29,7 +34,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Configuration
+                                    Scope
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -37,7 +42,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    3–5 BHK
+                                    Villas · Palaces · Apartments
                                   </h5>
                                 </div>
                                 <div className="data-item">
@@ -46,7 +51,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Typical area
+                                    Includes
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -54,7 +59,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    3,000 — 6,000 sq ft
+                                    Interiors · Kitchens · Pools
                                   </h5>
                                 </div>
                               </div>
@@ -66,8 +71,9 @@ export default function ResidenceTypes() {
                                 data-slider="p"
                                 className="p1 mob_a-center"
                               >
-                                Generous, grounded homes that connect
-                                architecture, interiors and the landscape.
+                                Exceptional residential spaces — from grand
+                                villas and palace interiors to contemporary
+                                apartments.
                               </p>
                               <div className="u-24" />
                               <div
@@ -76,21 +82,21 @@ export default function ResidenceTypes() {
                                 className="apart-type-slide_btn"
                               >
                                 <a
-                                  aria-label="Explore villas"
+                                  aria-label="Explore residential projects"
                                   hover-btn=""
                                   hover-nav-item=""
-                                  href="/projects?type=villas"
+                                  href="/projects?type=residential"
                                   className="btn w-inline-block"
                                 >
                                   <div className="btn_label">
                                     <div className="btn_label_text">
                                       <div hover="text" className="l1">
-                                        Explore villas
+                                        Explore residential
                                       </div>
                                     </div>
                                     <div className="btn_label_text is-2">
                                       <div hover="text" className="l1">
-                                        Explore villas
+                                        Explore residential
                                       </div>
                                     </div>
                                   </div>
@@ -110,7 +116,7 @@ export default function ResidenceTypes() {
                             data-slider="h"
                             className="h2 a-center"
                           >
-                            Private villas
+                            Residential
                           </h3>
                           <div className="u-32 b-mob" />
                         </div>
@@ -122,9 +128,9 @@ export default function ResidenceTypes() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/villa.webp"
+                                src="/assets/antonovich/living-rooms/splendid-living-room-01.webp"
                                 loading="eager"
-                                alt="Generous residential interior connecting indoors and outdoors"
+                                alt="Splendid classical living room in a luxury residence by Luxury Antonovich Design"
                                 className="img"
                               />
                             </div>
@@ -150,7 +156,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Configuration
+                                    Scope
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -158,7 +164,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    2–4 BHK
+                                    Offices · Clinics · Public spaces
                                   </h5>
                                 </div>
                                 <div className="data-item">
@@ -167,7 +173,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Typical area
+                                    Includes
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -175,7 +181,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    1,200 — 3,000 sq ft
+                                    Interiors · Lighting · Branding
                                   </h5>
                                 </div>
                               </div>
@@ -187,8 +193,9 @@ export default function ResidenceTypes() {
                                 data-slider="p"
                                 className="p1 mob_a-center"
                               >
-                                Intelligent planning and bespoke details make
-                                everyday city living feel effortless.
+                                Spaces designed to leave an impression — where
+                                architecture, interiors, lighting and materials
+                                work together.
                               </p>
                               <div className="u-24" />
                               <div
@@ -197,21 +204,21 @@ export default function ResidenceTypes() {
                                 className="apart-type-slide_btn"
                               >
                                 <a
-                                  aria-label="Explore city homes"
+                                  aria-label="Explore commercial projects"
                                   hover-btn=""
                                   hover-nav-item=""
-                                  href="/projects?type=homes"
+                                  href="/projects?type=commercial"
                                   className="btn w-inline-block"
                                 >
                                   <div className="btn_label">
                                     <div className="btn_label_text">
                                       <div hover="text" className="l1">
-                                        Explore city homes
+                                        Explore commercial
                                       </div>
                                     </div>
                                     <div className="btn_label_text is-2">
                                       <div hover="text" className="l1">
-                                        Explore city homes
+                                        Explore commercial
                                       </div>
                                     </div>
                                   </div>
@@ -231,7 +238,7 @@ export default function ResidenceTypes() {
                             data-slider="h"
                             className="h2 a-center"
                           >
-                            City homes
+                            Commercial
                           </h3>
                           <div className="u-32 b-mob" />
                         </div>
@@ -243,9 +250,9 @@ export default function ResidenceTypes() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/apartment.webp"
+                                src="/assets/antonovich/offices/luxury-office-decor-01.webp"
                                 loading="eager"
-                                alt="Elegant apartment interior with bespoke joinery"
+                                alt="Luxury executive office interior by Luxury Antonovich Design"
                                 className="img"
                               />
                             </div>
@@ -271,7 +278,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Configuration
+                                    Scope
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -279,7 +286,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    Bespoke
+                                    Hotels · Restaurants · Spas
                                   </h5>
                                 </div>
                                 <div className="data-item">
@@ -288,7 +295,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="l1 reg"
                                   >
-                                    Typical area
+                                    Includes
                                   </h4>
                                   <div className="u-8" />
                                   <h5
@@ -296,7 +303,7 @@ export default function ResidenceTypes() {
                                     data-slider="p"
                                     className="h5"
                                   >
-                                    2,000 — 8,000 sq ft
+                                    Architecture · Interiors · Fit-out
                                   </h5>
                                 </div>
                               </div>
@@ -308,8 +315,9 @@ export default function ResidenceTypes() {
                                 data-slider="p"
                                 className="p1 mob_a-center"
                               >
-                                Intimate restaurants, boutique stays and spaces
-                                with a distinct sense of place.
+                                Hotels, restaurants and wellness spaces composed
+                                as cohesive guest experiences, from facade to
+                                finishing detail.
                               </p>
                               <div className="u-24" />
                               <div
@@ -318,7 +326,7 @@ export default function ResidenceTypes() {
                                 className="apart-type-slide_btn"
                               >
                                 <a
-                                  aria-label="Explore hospitality"
+                                  aria-label="Explore hospitality projects"
                                   hover-btn=""
                                   hover-nav-item=""
                                   href="/projects?type=hospitality"
@@ -364,9 +372,9 @@ export default function ResidenceTypes() {
                               className="img-w"
                             >
                               <img
-                                src="/assets/interiors/hospitality.webp"
+                                src="/assets/antonovich/hospitality/extra-beautiful-restaurant-decor-01.webp"
                                 loading="eager"
-                                alt="Intimate hospitality interior with warm lighting and natural timber"
+                                alt="Restaurant interior with bespoke lighting and dark marble by Luxury Antonovich Design"
                                 className="img"
                               />
                             </div>

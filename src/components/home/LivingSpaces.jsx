@@ -12,13 +12,13 @@ export default function LivingSpaces() {
                 <h2 data-scroll-reveal="h" className="h1 a-center">
                   The
                   <br />
-                  space
+                  art
                   <br />
-                  to
+                  of
                 </h2>
                 <div className="interior-s_title_a">
                   <h3 data-scroll-reveal="a" className="a1 a-center">
-                    Live in
+                    Living
                   </h3>
                 </div>
               </div>
@@ -35,9 +35,9 @@ export default function LivingSpaces() {
                     <div className="interior-s_l_img">
                       <div data-scroll-reveal="slide" className="img-w">
                         <img
-                          src="/assets/interiors/retreat.webp"
+                          src="/assets/antonovich/villas/interior-design-luxury-villa-new-york-01.webp"
                           loading="eager"
-                          alt="Warm contemporary home with a restrained material palette"
+                          alt="Luxury villa living room in New York with fireplace by Luxury Antonovich Design"
                           className="img"
                         />
                       </div>
@@ -49,10 +49,9 @@ export default function LivingSpaces() {
                   <div className="interior-s_l_desc">
                     <div className="u-16" />
                     <h4 data-scroll-reveal="p" className="l1">
-                      Thoughtfully considered:
-                      <br />• Bespoke furniture & joinery <br />• Art & object
-                      curation
-                      <br />• Styling & finishing touches
+                      Luxury villas · Mansions · Palaces
+                      <br />• Apartments & private residences
+                      <br />• Home cinemas & swimming pools
                     </h4>
                     <div className="u-160 b-mob" />
                   </div>
@@ -67,9 +66,9 @@ export default function LivingSpaces() {
                   <div className="interior-s_r_img">
                     <div data-scroll-reveal="slide" className="img-w">
                       <img
-                        src="/assets/interiors/villa.webp"
+                        src="/assets/antonovich/living-rooms/best-hall-designing-01.webp"
                         loading="eager"
-                        alt="Generous residential interior connecting indoors and outdoors"
+                        alt="Villa hall with sculptural white staircase by Luxury Antonovich Design"
                         className="img"
                       />
                     </div>
@@ -78,17 +77,17 @@ export default function LivingSpaces() {
                     <div className="u-16" />
                     <div className="red-line" />
                     <h4 data-scroll-reveal="p" className="h5">
-                      Beautiful to look at. Effortless to live in. Every detail
-                      earns its place.
+                      Every room designed as part of one coherent residence.
                     </h4>
                   </div>
                   <div className="interior-s_r_desc">
                     <div className="u-64" />
                     <p data-scroll-reveal="p" className="p1">
-                      Intuitive layouts. Integrated storage. Layered lighting.
-                      Materials that respond to our climate. Craftsmanship you
-                      can see and feel. A home designed for real life, in all
-                      its beautiful detail.
+                      Living rooms, bedrooms, dining rooms, kitchens, bathrooms
+                      and dressing rooms — each composed with professionally
+                      modelled space, light, furniture and decor of own design
+                      and production, in any stylistic direction: modern,
+                      classic, art deco or eclectic.
                     </p>
                     <div className="u-96" />
                   </div>
@@ -186,9 +185,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/bedroom.webp"
+                            src="/assets/antonovich/bedrooms/elite-modern-bedroom-03.webp"
                             loading="eager"
-                            alt="Calm bedroom with layered textiles and warm lighting"
+                            alt="Elite modern bedroom by Luxury Antonovich Design"
                             className="img"
                           />
                         </div>
@@ -207,9 +206,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/suite.webp"
+                            src="/assets/antonovich/kitchens/elegant-classic-style-kitchen-interior-design-01.webp"
                             loading="eager"
-                            alt="Restful bedroom with soft linen and natural textures"
+                            alt="Classic-style kitchen with carved cabinetry and marble island by Luxury Antonovich Design"
                             className="img"
                           />
                         </div>
@@ -228,9 +227,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/bath.webp"
+                            src="/assets/antonovich/bathrooms/new-classic-bathroom-interior-01.webp"
                             loading="eager"
-                            alt="Refined bathroom with stone surfaces and warm metallic details"
+                            alt="New classic bathroom interior by Luxury Antonovich Design"
                             className="img"
                           />
                         </div>
@@ -249,9 +248,9 @@ export default function LivingSpaces() {
                           className="img-w"
                         >
                           <img
-                            src="/assets/interiors/kitchen.webp"
+                            src="/assets/antonovich/residential/classic-luxury-home-cinema-design-01.webp"
                             loading="eager"
-                            alt="Bespoke kitchen with natural finishes and clean-lined cabinetry"
+                            alt="Classic luxury home cinema by Luxury Antonovich Design"
                             className="img"
                           />
                         </div>

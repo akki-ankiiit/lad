@@ -15,9 +15,9 @@ export default function Hero() {
                     data-scroll-reveal="h"
                     className="h1 a-center"
                   >
-                    Azure
+                    Luxury
                     <br />
-                    Interiors
+                    Antonovich
                   </h1>
                   <div className="hero-s_logo_a">
                     <h2
@@ -25,7 +25,7 @@ export default function Hero() {
                       data-scroll-reveal="a"
                       className="a2"
                     >
-                      India
+                      Design
                     </h2>
                   </div>
                 </div>
@@ -38,7 +38,7 @@ export default function Hero() {
                     data-prevent-flicker=""
                     className="a-left"
                   >
-                    <div className="span">Your story</div>
+                    <div className="span">Where architecture</div>
                   </span>
                   <div
                     data-prevent-flicker=""
@@ -47,7 +47,7 @@ export default function Hero() {
                   >
                     <a
                       hover-tab=""
-                      aria-label="by day"
+                      aria-label="Interior view"
                       hover-nav-item-l2=""
                       data-tab-trigger="day"
                       href="#"
@@ -55,17 +55,17 @@ export default function Hero() {
                     >
                       <div className="nav-item_label">
                         <div hover="text" className="nav-item_label_text">
-                          <div className="l2">by day</div>
+                          <div className="l2">interior</div>
                         </div>
                         <div hover="text" className="nav-item_label_text is-2">
-                          <div className="l2">by day</div>
+                          <div className="l2">interior</div>
                         </div>
                       </div>
                     </a>
                     <div className="hero-s_tabs_divider" />
                     <a
                       hover-tab=""
-                      aria-label="by night"
+                      aria-label="Exterior view"
                       hover-nav-item-l2=""
                       data-tab-trigger="night"
                       href="#"
@@ -73,10 +73,10 @@ export default function Hero() {
                     >
                       <div className="nav-item_label">
                         <div hover="text" className="nav-item_label_text">
-                          <div className="l2">by night</div>
+                          <div className="l2">exterior</div>
                         </div>
                         <div hover="text" className="nav-item_label_text is-2">
-                          <div className="l2">by night</div>
+                          <div className="l2">exterior</div>
                         </div>
                       </div>
                     </a>
@@ -86,7 +86,7 @@ export default function Hero() {
                     data-prevent-flicker=""
                     className="a-right"
                   >
-                    <div className="span">Our canvas</div>
+                    <div className="span">becomes art</div>
                   </span>
                 </h3>
               </div>
@@ -201,8 +201,8 @@ export default function Hero() {
                     <div data-tab="img" className="img-w h-auto">
                       <img
                         loading="eager"
-                        src="/assets/interiors/hero.webp"
-                        alt="Warm, light-filled living room with natural materials and sculptural furniture"
+                        src="/assets/antonovich/villas/interior-design-luxury-villa-in-san-francisco-01.webp"
+                        alt="Luxury villa sitting room with sculptural gold staircase, chandeliers and turquoise drapery by Luxury Antonovich Design"
                         className="img h-auto hero-img"
                       />
                     </div>
@@ -214,8 +214,8 @@ export default function Hero() {
                     <div data-tab="img" className="img-w h-auto">
                       <img
                         loading="eager"
-                        src="/assets/interiors/hero.webp"
-                        alt="Warm, light-filled living room with natural materials and sculptural furniture"
+                        src="/assets/antonovich/exteriors/unveiling-opulence-in-modern-exteriors-01.webp"
+                        alt="Contemporary luxury villa exterior with landscaped garden at dusk — Luxury Antonovich Design"
                         className="img h-auto hero-img"
                       />
                     </div>
@@ -310,7 +310,12 @@ export default function Hero() {
                   <div className="u-32" />
                   <div className="grid">
                     <div className="hero-s_desc">
-                      <p className="l1 a-center" />
+                      <p className="l1 a-center">
+                        Luxury Antonovich Design creates exceptional
+                        architectural and interior experiences, bringing
+                        together creative vision, engineering precision, bespoke
+                        craftsmanship and complete project execution.
+                      </p>
                     </div>
                   </div>
                   <div className="u-48" />

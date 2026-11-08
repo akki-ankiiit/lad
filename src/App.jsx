@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import { routes } from "./data/routes";
 import ExperienceShell from "./components/layout/ExperienceShell";
-import { useSiteExperience } from "./hooks/useSiteExperience";
+import { scrollToHash, useSiteExperience } from "./hooks/useSiteExperience";
 import { useContactForm } from "./hooks/useContactForm";
 
 function PageExperience({ Component }) {
@@ -26,11 +26,15 @@ function PageExperience({ Component }) {
 
 function LoadingScreen() {
   return (
-    <div className="route-loading" role="status" aria-label="Loading Azure Interiors">
+    <div
+      className="route-loading"
+      role="status"
+      aria-label="Loading Luxury Antonovich Design"
+    >
       <span>
-        AZURE
+        LUXURY
         <br />
-        INTERIORS
+        ANTONOVICH
       </span>
     </div>
   );
@@ -39,11 +43,11 @@ function LoadingScreen() {
 function NotFound() {
   return (
     <main className="not-found">
-      <p className="l2">AZURE INTERIORS</p>
+      <p className="l2">LUXURY ANTONOVICH DESIGN</p>
       <h1 className="h2">
-        A space
+        Where architecture
         <br />
-        to call yours.
+        becomes art.
       </h1>
       <a className="h5" href="/">
         Return home ↗
@@ -58,15 +62,18 @@ export default function App() {
   const transitioning = useRef(false);
   const route = routes.find(
     (item) =>
+      item.match?.(location.pathname.replace(/\/$/, "")) ||
       item.path === location.pathname.replace(/\/$/, "") ||
       (item.path === "/" && location.pathname === "/"),
   );
   const [failure, setFailure] = useState(false);
 
   useEffect(() => {
-    document.title = route?.title || "Page not found — Azure Interiors";
+    if (route?.title) document.title = route.title;
+    else if (!route)
+      document.title = "Page not found — Luxury Antonovich Design";
     transitioning.current = false;
-  }, [route]);
+  }, [route, location.pathname]);
 
   useEffect(() => {
     const handleNavigation = (event) => {
@@ -93,6 +100,11 @@ export default function App() {
         target.pathname === location.pathname &&
         target.search === location.search
       ) {
+        if (target.hash) {
+          window.history.replaceState(null, "", target.hash);
+          scrollToHash(target.hash);
+          return;
+        }
         window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
@@ -121,7 +133,7 @@ export default function App() {
     return (
       <div className="not-found">
         <h1 className="h3">Please refresh</h1>
-        <p>A new version of the studio website is available.</p>
+        <p>A new version of the website is available.</p>
         <button onClick={() => window.location.reload()}>Reload page</button>
       </div>
     );

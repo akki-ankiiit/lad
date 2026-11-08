@@ -1,5 +1,5 @@
 {
-  "name": "era-residence-react",
+  "name": "luxury-antonovich-design",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test": "playwright test",
-    "format": "prettier --write src scripts tests *.js *.json *.html README.md",
-    "assets:sync": "node scripts/sync-assets.mjs"
+    "format": "prettier --write src tests *.js *.html README.md",
+    "assets:scrape": ".venv/bin/python scripts/scrape_antonovich_assets.py"
   },
   "dependencies": {
     "gsap": "^3.15.0",

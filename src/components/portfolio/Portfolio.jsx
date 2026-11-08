@@ -2,16 +2,14 @@ import { projects, projectTypes } from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectFilter from "./ProjectFilter";
 import FlowerVideo from "../media/FlowerVideo";
+
+const slug = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 export default function Portfolio() {
-  const cities = [
-    {
-      value: "*",
-      label: "All cities",
-    },
-    ...[...new Set(projects.map((project) => project.city))].map((city) => ({
-      value: city.toLowerCase(),
-      label: city,
-    })),
+  const locations = [
+    { value: "*", label: "All locations" },
+    ...[...new Set(projects.map((project) => project.location).filter(Boolean))]
+      .sort()
+      .map((location) => ({ value: slug(location), label: location })),
   ];
   return (
     <section data-bg="light" className="section clip">
@@ -24,7 +22,7 @@ export default function Portfolio() {
               <div data-sort="" data-filter="" className="apart-s_cms">
                 <div className="apart-s_title">
                   <h1 data-scroll-reveal="h" className="h1">
-                    Our projects
+                    Our works
                   </h1>
                   <div data-filter-count="" className="h1 b-desk">
                     {projects.length}
@@ -32,22 +30,24 @@ export default function Portfolio() {
                 </div>
                 <div className="u-24" />
                 <p className="p1 portfolio-intro">
-                  A collection of design studies exploring the many ways we
-                  live. Rooted in place, shaped around people.
+                  Authentic residential, commercial, hospitality and
+                  architectural projects by Luxury Antonovich Design — from
+                  grand villas and palace-inspired interiors to hotels,
+                  restaurants, offices and landscapes.
                 </p>
                 <div className="u-32" />
                 <div className="apart-s_cms_filter">
                   <div className="apart-s_cms_filter_c">
                     <div className="grid _9-columns">
                       <ProjectFilter
-                        label="Spaces"
+                        label="Category"
                         group="type"
                         options={projectTypes}
                       />
                       <ProjectFilter
                         label="Location"
                         group="city"
-                        options={cities}
+                        options={locations}
                       />
                       <ProjectFilter
                         label="Sort"
@@ -58,13 +58,13 @@ export default function Portfolio() {
                             label: "Selected",
                           },
                           {
-                            value: "area",
-                            label: "Area: low to high",
+                            value: "name",
+                            label: "Name: A to Z",
                           },
                           {
-                            value: "area",
+                            value: "name",
                             order: "desc",
-                            label: "Area: high to low",
+                            label: "Name: Z to A",
                           },
                         ]}
                       />
@@ -87,15 +87,18 @@ export default function Portfolio() {
                     className="apart-cms_list"
                   >
                     {projects.map((project) => (
-                      <ProjectCard key={project.slug} project={project} />
+                      <ProjectCard
+                        key={project.slug}
+                        project={project}
+                        eager={project.number <= "06"}
+                      />
                     ))}
                   </div>
                 </div>
                 <div data-filter-empty="" className="portfolio-empty">
-                  <h2 className="h4">Room for something new.</h2>
+                  <h2 className="h4">No projects match.</h2>
                   <p className="p1">
-                    No studies match these filters. Reset to explore the full
-                    collection.
+                    Reset the filters to explore the complete portfolio.
                   </p>
                 </div>
                 <div className="u-160" />

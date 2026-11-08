@@ -24,7 +24,7 @@ export default function Architecture() {
               <div className="arch-s_t">
                 <div className="u-48" />
                 <h2 data-text="h" data-fit-text="" className="h1 a-center">
-                  Our craft
+                  Bespoke
                 </h2>
                 <div className="u-32" />
                 <div className="grid">
@@ -38,18 +38,18 @@ export default function Architecture() {
                   <div className="arch-s_quote w-clearfix">
                     <div className="red-line" />
                     <h3 data-part="p" className="h5">
-                      We bring a contemporary eye to Indian craftsmanship,
-                      creating a quiet dialogue between tradition, texture and
-                      modern life
+                      Crafted to belong. Designed to last. Furniture, lighting,
+                      curtains and decor of own production — created to
+                      complement the architecture and character of each project.
                     </h3>
                     <div className="u-64" />
                     <div className="grid _4-columns">
                       <div className="arch-s_author">
                         <div data-part="p" className="l1">
-                          Designed with intention
+                          Furniture production
                         </div>
                         <div data-part="p" className="l1 reg">
-                          Crafted in collaboration
+                          Showroom · Jumeirah, Dubai
                         </div>
                       </div>
                     </div>
@@ -66,19 +66,19 @@ export default function Architecture() {
                       <div data-magnetic-inner="" className="btn-circle_label">
                         <a
                           hover-nav-item=""
-                          aria-label="Discuss your space"
+                          aria-label="Inquire now"
                           href="#"
                           className="nav-item w-inline-block"
                         >
                           <div className="nav-item_label">
                             <div className="nav-item_label_text">
                               <div hover="text" className="l1">
-                                Discuss your space
+                                Inquire now
                               </div>
                             </div>
                             <div className="nav-item_label_text is-2">
                               <div hover="text" className="l1">
-                                Discuss your space
+                                Inquire now
                               </div>
                             </div>
                           </div>
@@ -123,7 +123,7 @@ export default function Architecture() {
                         </svg>
                       </div>
                       <a
-                        aria-label="Discuss your space"
+                        aria-label="Inquire now"
                         href="#"
                         className="btn-circle_link w-inline-block"
                       />
@@ -137,8 +137,8 @@ export default function Architecture() {
               <div data-desk="off" data-parallax="w" className="img-w">
                 <img
                   className="img"
-                  src="/assets/interiors/courtyard.webp"
-                  alt="Airy living space opening onto a landscaped courtyard"
+                  src="/assets/antonovich/miscellaneous/antonovich-services-12.webp"
+                  alt="Bespoke sofa and carpet from the Luxury Antonovich Design furniture collection"
                   data-parallax="img"
                   loading="eager"
                 />

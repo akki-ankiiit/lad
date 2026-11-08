@@ -1,4 +1,4 @@
-import HeaderLogo from "../apartmentspage/HeaderLogo";
+import HeaderLogo from "../studio/HeaderLogo";
 import Navigation from "../contactpage/Navigation";
 import MenuModal from "../contactpage/MenuModal";
 import CallModal from "./CallModal";
@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import SeaViews from "../home/SeaViews";
 export default function StudioLayout({
   children,
-  breadcrumb = "Selected projects",
+  breadcrumb = "Our works",
   showCta = true,
 }) {
   return (

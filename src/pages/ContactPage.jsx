@@ -1,9 +1,9 @@
-import HeaderLogo from "../components/apartmentspage/HeaderLogo";
+import HeaderLogo from "../components/studio/HeaderLogo";
 import Navigation from "../components/contactpage/Navigation";
 import ContactPageBreadcrumbs from "../components/contactpage/ContactPageBreadcrumbs";
 import ContactPageContent from "../components/contactpage/ContactPageContent";
 import SeaViews from "../components/contactpage/SeaViews";
-import Footer from "../components/apartmentspage/Footer";
+import Footer from "../components/studio/Footer";
 import CallModal from "../components/layout/CallModal";
 import MenuModal from "../components/contactpage/MenuModal";
 export default function ContactPage() {

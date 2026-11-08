@@ -30,18 +30,18 @@ export default function CommunityQuote() {
                 </div>
                 <div className="red-line" />
                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                  The most beautiful rooms are the ones that make you feel at
-                  ease. We bring together light, proportion and the warmth of
-                  Indian craft to make that feeling last.
+                  From the first architectural concept to the final decorative
+                  detail, every element is considered as part of one complete
+                  design vision.
                 </h4>
                 <div className="u-64" />
                 <div className="grid _4-columns">
                   <div className="quote-s_author">
                     <div data-scroll-reveal="p" className="l1">
-                      Our design philosophy
+                      One complete design vision
                     </div>
                     <div data-scroll-reveal="p" className="l1 reg">
-                      Azure Interiors
+                      Luxury Antonovich Design
                     </div>
                   </div>
                 </div>
@@ -55,8 +55,8 @@ export default function CommunityQuote() {
               <div className="img-over-grad from-bot bot _4x b-desk" />
               <img
                 className="img h-auto quote-w_bg_img"
-                src="/assets/interiors/courtyard.webp"
-                alt="Airy living space opening onto a landscaped courtyard"
+                src="/assets/antonovich/living-rooms/hall-interior-decor-01.webp"
+                alt="Classical hall interior with arched colonnade and marble floor inlay by Luxury Antonovich Design"
                 data-parallax="img-out"
                 loading="eager"
               />

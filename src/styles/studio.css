@@ -50,3 +50,36 @@
   .project-related { padding-left: var(--24px); padding-right: var(--24px); }
   .studio-breadcrumb { display: none; }
 }
+
+/* Founder section — restored from the original live site. */
+.studio-founders{position:relative;padding:var(--_units---u-96) 0 var(--_units---u-160)}
+.founders_intro{max-width:900px;margin:0 auto}
+.founders_intro_a{display:block;margin-top:.06em;font-family:var(--_fonts---font-accent);font-size:clamp(38px,4.4vw,66px);font-weight:400;line-height:.92;letter-spacing:-.01em;text-transform:none;transform:rotate(-4deg);transform-origin:30% 60%}
+.founders_intro_lead{max-width:34em;margin:0 auto;opacity:.78}
+.founders_list{display:flex;flex-direction:column;gap:var(--_units---u-96);margin-top:var(--_units---u-96);counter-reset:founder}
+.founder{display:grid;grid-template-columns:repeat(10,1fr);column-gap:var(--_special-units---grid-gap);align-items:center}
+.founder_media{grid-column:2 / span 4;grid-row:1;justify-self:center;width:100%;max-width:360px;margin:0}
+.founder_body{grid-column:7 / span 4;grid-row:1;align-self:center}
+.founder--reverse .founder_media{grid-column:6 / span 4}
+.founder--reverse .founder_body{grid-column:1 / span 4}
+.founder_img{aspect-ratio:4 / 5;background-color:var(--_colors---base-1000--bg)}
+.founder_img .img{object-fit:cover;object-position:center 22%}
+.founder_role{color:var(--_colors---base-1000--gray-text)}
+.founder_role:before{content:counter(founder,decimal-leading-zero);counter-increment:founder;display:inline-block;min-width:2.8em;opacity:.55}
+.founder_name{margin-top:12px}
+.founder_rule{margin:24px 0}
+.founder_bio{max-width:34em}
+.founder_bio + .founder_bio{margin-top:16px}
+.founder_quote{margin:32px 0 0;padding-left:20px;border-left:1px solid var(--_colors---base-1000--line);font-family:var(--_fonts---font-display);font-size:clamp(22px,2.1vw,32px);line-height:1.28;letter-spacing:-.01em;text-wrap:balance}
+@media (max-width:991px){.founder{grid-template-columns:repeat(4,1fr);row-gap:32px}.founder_media,.founder--reverse .founder_media{grid-column:1 / span 4;grid-row:1;max-width:320px}.founder_body,.founder--reverse .founder_body{grid-column:1 / span 4;grid-row:2}.founder_body{justify-self:center;width:100%;max-width:560px}.founder_quote{margin-top:24px;font-size:30px}}
+@media (max-width:479px){.founder_media,.founder--reverse .founder_media{max-width:300px}.founder_quote{font-size:22px}}
+
+/* Contact-form selects share the original input styling. */
+.studio-select{appearance:none;-webkit-appearance:none;background:transparent;color:inherit;border-radius:0;cursor:pointer}
+.studio-select[multiple]{min-height:9.5em;padding-top:.4em;padding-bottom:.4em}
+.studio-select option{color:#17233b;background:#fff}
+.brand-mark{object-fit:contain}
+
+/* Long official project names keep the original title style at a reduced size. */
+.project-title.is-long { font-size: clamp(34px, 3.2vw, 56px); }
+@media (max-width: 991px) { .project-title.is-long { font-size: 40px; } }

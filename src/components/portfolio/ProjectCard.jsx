@@ -1,5 +1,6 @@
-import { photography } from "../../data/media";
-export default function ProjectCard({ project }) {
+const slug = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+export default function ProjectCard({ project, eager = false }) {
   return (
     <div
       data-filter-item=""
@@ -16,15 +17,15 @@ export default function ProjectCard({ project }) {
       >
         <div className="apart-card_c">
           <div className="apart-card_t">
-            <p data-type={project.type} className="l2 a-center">
-              {project.category}
+            <p data-type={project.category} className="l2 a-center">
+              {project.categoryLabel}
             </p>
             <div className="u-4" />
             <p
-              data-city={project.city.toLowerCase()}
+              data-city={project.location ? slug(project.location) : ""}
               className="l2 reg a-center"
             >
-              {project.city}, India
+              {project.location || project.discipline}
             </p>
           </div>
           <div className="u-24" />
@@ -32,24 +33,26 @@ export default function ProjectCard({ project }) {
             <img
               hover="img"
               src={project.image}
-              alt={photography[project.cover].alt}
-              loading="lazy"
+              alt={project.alt}
+              loading={eager ? "eager" : "lazy"}
+              decoding="async"
             />
           </div>
           <div className="u-24" />
           <div className="apart-card_b">
-            <h2 className="h5 a-center portfolio-card-title">{project.name}</h2>
+            <h2
+              data-sort-name={project.name.toLowerCase()}
+              className="h5 a-center portfolio-card-title"
+            >
+              {project.name}
+            </h2>
             <div className="u-16" />
             <div className="apart-card_data-list">
-              <span data-sort-area={project.area} className="l2 reg">
-                {project.area.toLocaleString("en-IN")} sq ft
-              </span>
-              <span className="data-divider" />
-              <span className="l2 reg">{project.year}</span>
+              <span className="l2 reg">{project.discipline}</span>
             </div>
             <div className="u-16" />
             <p className="l2 reg a-center">
-              {project.status} <span aria-hidden="true">↗</span>
+              View project <span aria-hidden="true">↗</span>
             </p>
           </div>
         </div>

@@ -95,23 +95,23 @@ export default function Navigation() {
       <div className="header-nav_list f-desk">
         <a
           hover-link=""
-          aria-label="Selected projects"
+          aria-label="Our works"
           href="/projects"
           className="link w-inline-block"
         >
           <div className="link_label">
             <div className="link_label_text">
               <div hover="text" className="h6">
-                Selected
+                Our
                 <br />
-                Projects
+                Works
               </div>
             </div>
             <div className="link_label_text is-2">
               <div hover="text" className="h6">
-                Selected
+                Our
                 <br />
-                Projects
+                Works
               </div>
             </div>
           </div>
@@ -119,17 +119,17 @@ export default function Navigation() {
         <div className="u-24" />
         <a
           data-modal-cta-btn="book-a-call"
-          aria-label="Let\u2019s talk"
+          aria-label="Inquire now"
           hover-nav-item-l2=""
           href="#"
           className="nav-item w-inline-block"
         >
           <div className="nav-item_label">
             <div hover="text" className="nav-item_label_text">
-              <div className="l2">Let’s talk</div>
+              <div className="l2">Inquire now</div>
             </div>
             <div hover="text" className="nav-item_label_text is-2">
-              <div className="l2">Let’s talk</div>
+              <div className="l2">Inquire now</div>
             </div>
           </div>
         </a>

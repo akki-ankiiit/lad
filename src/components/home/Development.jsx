@@ -1,4 +1,6 @@
 import FlowerVideo from "../media/FlowerVideo";
+import { testimonials } from "../../data/studio";
+/** Design philosophy and verified client reviews (antonovich-design.com/testimonials.html). */
 /** Migrated reference markup. Interactions are managed by useSiteExperience. */
 export default function Development() {
   return (
@@ -10,7 +12,7 @@ export default function Development() {
             <div className="grid">
               <div className="s_title">
                 <p data-scroll-reveal="p" className="l1 a-center">
-                  Rooted in India — designed around you
+                  Every detail has a purpose. Every space has a story.
                 </p>
               </div>
             </div>
@@ -31,7 +33,7 @@ export default function Development() {
                         <div className="other-card_name">
                           <div className="other-card_name_label">
                             <h4 data-scroll-reveal="h" className="h3 a-center">
-                              Our approach
+                              Our philosophy
                             </h4>
                             <div
                               data-scroll-reveal="ctn"
@@ -68,7 +70,15 @@ export default function Development() {
                                 data-accordion-card="p"
                                 className="p1 a-center"
                               >
-                                Listen first. Design thoughtfully.
+                                We believe luxury is created through the
+                                thoughtful relationship between architecture,
+                                materials, proportions, lighting and
+                                craftsmanship. Our design philosophy combines
+                                individual expression with architectural
+                                discipline — architectural harmony, bespoke
+                                craftsmanship, material excellence, thoughtful
+                                lighting, personalised design and complete
+                                execution.
                               </p>
                               <div className="u-32" />
                               <div
@@ -91,7 +101,7 @@ export default function Development() {
                         <div className="other-card_name">
                           <div className="other-card_name_label">
                             <h4 data-scroll-reveal="h" className="h3 a-center">
-                              Our collaborators
+                              {testimonials[0].author}
                             </h4>
                             <div
                               data-scroll-reveal="ctn"
@@ -124,23 +134,11 @@ export default function Development() {
                           <div className="u-32" />
                           <div className="grid _6-columns">
                             <div className="other-card_info_desc">
-                              <div
-                                data-accordion-card="ctn"
-                                className="other-card_info_logo"
-                              >
-                                <img
-                                  src="/assets/studio/makers.svg"
-                                  loading="eager"
-                                  alt=""
-                                  className="logo b"
-                                />
-                              </div>
-                              <div className="u-32" />
                               <p
                                 data-accordion-card="p"
                                 className="p1 a-center"
                               >
-                                Independent Indian makers
+                                “{testimonials[0].text}”
                               </p>
                               <div className="u-32" />
                               <div
@@ -163,7 +161,7 @@ export default function Development() {
                         <div className="other-card_name">
                           <div className="other-card_name_label">
                             <h4 data-scroll-reveal="h" className="h3 a-center">
-                              From concept to keys
+                              {testimonials[1].author}
                             </h4>
                             <div
                               data-scroll-reveal="ctn"
@@ -200,11 +198,7 @@ export default function Development() {
                                 data-accordion-card="p"
                                 className="p1 a-center"
                               >
-                                A clear, collaborative process — from the brief
-                                and spatial planning to material selection,
-                                detailed drawings and on-site coordination. One
-                                considered vision, carried through to the
-                                finishing touches.
+                                “{testimonials[1].text}”
                               </p>
                               <div className="u-32" />
                               <div
@@ -227,7 +221,7 @@ export default function Development() {
                         <div className="other-card_name">
                           <div className="other-card_name_label">
                             <h4 data-scroll-reveal="h" className="h3 a-center">
-                              2026
+                              {testimonials[2].author}
                             </h4>
                             <div
                               data-scroll-reveal="ctn"
@@ -264,11 +258,7 @@ export default function Development() {
                                 data-accordion-card="p"
                                 className="p1 a-center"
                               >
-                                Planning a new home or reimagining an existing
-                                space? Share your location, floor area in sq ft,
-                                estimated budget in ₹ and your preferred
-                                timeline. We will help you understand the next
-                                steps.
+                                “{testimonials[2].text}”
                               </p>
                               <div className="u-32" />
                               <div

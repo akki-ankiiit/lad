@@ -3,6 +3,7 @@ import Hero from "../components/home/Hero";
 import CoastalIntroduction from "../components/home/CoastalIntroduction";
 import ThreeReasons from "../components/home/ThreeReasons";
 import CommunityQuote from "../components/home/CommunityQuote";
+import CreativeLeadership from "../components/home/CreativeLeadership";
 import ConceptAndLocation from "../components/home/ConceptAndLocation";
 import CoastalPanorama from "../components/home/CoastalPanorama";
 import ResidenceTypes from "../components/home/ResidenceTypes";
@@ -30,6 +31,7 @@ export default function HomePage() {
       <CoastalIntroduction />
       <ThreeReasons />
       <CommunityQuote />
+      <CreativeLeadership />
       <ConceptAndLocation />
       <CoastalPanorama />
       <ResidenceTypes />

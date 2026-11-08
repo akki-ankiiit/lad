@@ -372,6 +372,7 @@ export function createSiteExperience({ initialLoad = true } = {}) {
       easing: (e) => Math.min(1, 1.001 - Math.pow(2, -10 * e)),
       infinite: !1,
     })),
+      (window.__lenis = lenis),
       lenis.on("scroll", ScrollTrigger.update),
       tick((e) => lenis.raf(1e3 * e)),
       gsap.ticker.lagSmoothing(0));
@@ -3752,6 +3753,7 @@ export function createSiteExperience({ initialLoad = true } = {}) {
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     gsap.globalTimeline.clear();
     lenis?.destroy();
+    if (window.__lenis === lenis) window.__lenis = null;
     localLenisInstances.forEach((instance) => instance.destroy());
     document
       .querySelectorAll("*")
